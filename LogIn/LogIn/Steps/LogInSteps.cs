@@ -1,4 +1,5 @@
-﻿using Gauge.CSharp.Lib.Attribute;
+﻿using FluentAssertions;
+using Gauge.CSharp.Lib.Attribute;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -38,17 +39,41 @@ namespace LogIn.Steps
             _driver.FindElement(By.Id("email")).Clear();
             _driver.FindElement(By.Id("email")).SendKeys(email);
         }
+
         [Step("Fill password with <pswrd>")]
-        public void FillPassword (string pswrd)
+        public void FillPassword(string pswrd)
         {
             _driver.FindElement(By.Id("passwd")).Clear();
             _driver.FindElement(By.Id("passwd")).SendKeys(pswrd);
         }
+
         [Step("Click Sign in button")]
         public void ClickSignIn()
         {
             _driver.FindElement(By.Id("SubmitLogin")).Click();
         }
-        //TODO: ASSERTS
+
+        [Step("Check proper username is shown in the header with <expectedT>")]
+        public void CheckProperUsername(string expectedT)
+        {
+            _driver.FindElement(By.ClassName("account")).Text.Should().Be(expectedT);
+        }
+
+        [Step("Check my account page contains <urlSubString>")]
+        public void CheckMyAccountPage(string urlSubString)
+        {
+            _driver.Url.Should().Contain(urlSubString);
+        }
+        [Step("Check Log out action is available showing <expectedT>")]
+        public void CheckLogOut(string expectedT)
+        {
+            _driver.FindElement(By.ClassName("logout")).Text.Should().Be(expectedT);
+            TakeScreenshot();
+        }
+
+        public void TakeScreenshot()
+        {
+            Console.WriteLine("TAKE SCREENSHOT");
+        }
     }
 }
