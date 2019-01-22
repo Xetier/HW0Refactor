@@ -11,12 +11,14 @@ namespace Checkout
 {
     public class Hooks
     {
+        const int timeout = 60;
         public static IWebDriver _driver;
 
         [BeforeSuite]
         public void Initialize()
         {
             _driver = new ChromeDriver();
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(timeout);
         }
 
         [AfterSuite]

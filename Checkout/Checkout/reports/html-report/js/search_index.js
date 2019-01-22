@@ -1,0 +1,1 @@
+var index = {"Tags":{"checkoutscenario1":["specs/Checkout.html"],"checkoutspec":["specs/Checkout.html"]},"Specs":{"Checkout":["specs/Checkout.html"]}};
