@@ -121,8 +121,8 @@ namespace SignIn.Steps
         [Step("Fill second address in Address2 field with <address2>")]
         public void FillSecondtAddress(string address2)
         {
-            _driver.FindElement(By.Id("address1")).Clear();
-            _driver.FindElement(By.Id("address1")).SendKeys(address2);
+            _driver.FindElement(By.Id("address2")).Clear();
+            _driver.FindElement(By.Id("address2")).SendKeys(address2);
         }
 
         [Step("Fill city in City field with <city>")]
