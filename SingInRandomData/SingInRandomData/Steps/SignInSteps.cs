@@ -109,7 +109,7 @@ namespace SingInRandomData.Steps
                 int state = random.Next(1, 51);
                 var cbxState = _driver.FindElement(By.Id("id_state"));
                 var selectElementState = new SelectElement(cbxState);
-                selectElementState.SelectByText(state.ToString());
+                selectElementState.SelectByValue(state.ToString());
 
                 _driver.FindElement(By.Id("postcode")).Clear();
                 _driver.FindElement(By.Id("postcode")).SendKeys(RandomGenerateNumber(5));
@@ -122,11 +122,11 @@ namespace SingInRandomData.Steps
                 _driver.FindElement(By.Id("other")).Clear();
                 _driver.FindElement(By.Id("other")).SendKeys(additional);
 
-                string phone = "(" + RandomGenerate(2).ToString() + ")" + RandomGenerate(3).ToString() + " - " + RandomGenerate(4).ToString();
+                string phone = RandomGenerateNumber(2).ToString() + RandomGenerate(9).ToString();
                 _driver.FindElement(By.Id("phone")).Clear();
                 _driver.FindElement(By.Id("phone")).SendKeys(phone);
 
-                string mphone = "(" + RandomGenerate(2).ToString() + ")" + RandomGenerate(3).ToString() + " - " + RandomGenerate(4).ToString();
+                string mphone = RandomGenerateNumber(2).ToString() + RandomGenerate(9).ToString();
                 _driver.FindElement(By.Id("phone_mobile")).Clear();
                 _driver.FindElement(By.Id("phone_mobile")).SendKeys(mphone);
 
@@ -173,7 +173,7 @@ namespace SingInRandomData.Steps
 
         public static string RandomGenerate(int length)
         {
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrsqtuvwxyz";
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrsqtuvwxyz";
             return new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
         }
 

@@ -1,0 +1,24 @@
+2019-01-23 15:53:45.783 -05:00 [INF] email: FzG9yUdN1G@sdZ3U.com
+2019-01-23 15:53:47.415 -05:00 [INF] firstName: Emo8xoQ7LG
+2019-01-23 15:53:47.546 -05:00 [INF] lastName: mb5qWq7EUQ
+2019-01-23 15:53:47.672 -05:00 [INF] password: WI¿#P?KxPl
+2019-01-23 15:56:54.243 -05:00 [INF] email: TOhBrZBjqP@uEwaQ.com
+2019-01-23 15:56:55.737 -05:00 [INF] firstName: anWPwlKUct
+2019-01-23 15:56:55.877 -05:00 [INF] lastName: HpvCDYPHcT
+2019-01-23 15:56:55.992 -05:00 [INF] password: k(qCmRiXb¿
+2019-01-23 15:57:10.693 -05:00 [ERR] Something went wrong
+OpenQA.Selenium.NoSuchElementException: Cannot locate element with text: 50
+   at OpenQA.Selenium.Support.UI.SelectElement.SelectByText(String text, Boolean partialMatch)
+   at SingInRandomData.Steps.SignInSteps.FillFields() in C:\PitDevelop\C#\HW0Refactor\SingInRandomData\SingInRandomData\Steps\SignInSteps.cs:line 112
+2019-01-23 15:58:46.266 -05:00 [INF] email: YiEwimWoIa@lwvoW.com
+2019-01-23 15:58:48.156 -05:00 [INF] firstName: RdoZalxfnQ
+2019-01-23 15:58:48.286 -05:00 [INF] lastName: uzsADMPtdF
+2019-01-23 15:58:48.416 -05:00 [INF] password: Z'2eP4T Ak
+2019-01-23 16:00:39.816 -05:00 [INF] email: EJEFAVXqDC@Aafde.com
+2019-01-23 16:00:41.272 -05:00 [INF] firstName: jvgmTByvgZ
+2019-01-23 16:00:41.403 -05:00 [INF] lastName: qnVSqxoqwO
+2019-01-23 16:00:41.513 -05:00 [INF] password: x yq41MkdZ
+2019-01-23 16:01:40.296 -05:00 [INF] email: vPyyGfesvq@jrjgI.com
+2019-01-23 16:01:41.964 -05:00 [INF] firstName: JDnnUKAMOa
+2019-01-23 16:01:42.097 -05:00 [INF] lastName: EARgXIJcqo
+2019-01-23 16:01:42.216 -05:00 [INF] password: 'd)IGYU¿b2
