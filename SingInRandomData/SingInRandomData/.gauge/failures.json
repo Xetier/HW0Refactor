@@ -1,8 +1,8 @@
 {
 	"Args": [
-		"run"
+		"run",
+		"-t",
+		"signinspec"
 	],
-	"FailedItems": [
-		"specs\\SignIn.spec:5"
-	]
+	"FailedItems": []
 }
