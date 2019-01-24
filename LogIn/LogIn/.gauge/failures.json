@@ -1,6 +1,8 @@
 {
 	"Args": [
-		"run"
+		"run",
+		"-t",
+		"loginspec"
 	],
 	"FailedItems": []
 }

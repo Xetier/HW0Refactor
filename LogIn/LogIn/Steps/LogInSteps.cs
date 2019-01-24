@@ -27,12 +27,6 @@ namespace LogIn.Steps
             _driver.FindElement(By.ClassName("login")).Click();
         }
 
-        [Step("I wait <seconds> seconds")]
-        public void WaitFor(int seconds)
-        {
-            Thread.Sleep(TimeSpan.FromSeconds(seconds));
-        }
-
         [Step("Fill email with <email>")]
         public void FillEmail(string email)
         {

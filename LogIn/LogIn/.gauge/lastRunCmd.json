@@ -1,4 +1,6 @@
 [
 	"gauge",
-	"run"
+	"run",
+	"-t",
+	"loginspec"
 ]
