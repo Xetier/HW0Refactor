@@ -62,7 +62,7 @@ namespace SingInRandomData.Steps
                 _driver.FindElement(By.Id("customer_firstname")).Clear();
                 _driver.FindElement(By.Id("customer_firstname")).SendKeys(firstName);
                 Log.Information("firstName: " + firstName);
-                
+
                 _driver.FindElement(By.Id("customer_lastname")).Clear();
                 _driver.FindElement(By.Id("customer_lastname")).SendKeys(lastName);
                 Log.Information("lastName: " + lastName);
@@ -122,11 +122,11 @@ namespace SingInRandomData.Steps
                 _driver.FindElement(By.Id("other")).Clear();
                 _driver.FindElement(By.Id("other")).SendKeys(additional);
 
-                string phone = RandomGenerateNumber(2).ToString() + RandomGenerate(9).ToString();
+                string phone = RandomGenerateNumber(2).ToString() + " " + RandomGenerateNumber(9).ToString();
                 _driver.FindElement(By.Id("phone")).Clear();
                 _driver.FindElement(By.Id("phone")).SendKeys(phone);
 
-                string mphone = RandomGenerateNumber(2).ToString() + RandomGenerate(9).ToString();
+                string mphone = RandomGenerateNumber(2).ToString() + " " + RandomGenerateNumber(9).ToString();
                 _driver.FindElement(By.Id("phone_mobile")).Clear();
                 _driver.FindElement(By.Id("phone_mobile")).SendKeys(mphone);
 
